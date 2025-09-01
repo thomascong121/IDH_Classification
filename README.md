@@ -38,9 +38,9 @@ processed_slide/
 Training
 ====
 We provide the training code for GPASS in `run.sh`. There are couple of parameters that can be modified in the `run.sh` file. 
-DATA_NAME: the name of the dataset, e.g. ZJ, ZJ_test, etc.
-MODEL_NAME: the name of the model, e.g. ResNet50, ResNet101, etc.
-MODEL_NAME_MIL: the name of the MIL model, e.g. CLAM_SB, CLAM_GB, etc.
+`DATA_NAME`: the name of the dataset, e.g. ZJ, ZJ_test, etc.
+`MODEL_NAME`: the name of the model, e.g. ResNet50, ResNet101, etc.
+`MODEL_NAME_MIL`: the name of the MIL model, e.g. CLAM_SB, CLAM_GB, etc.
 
 Training the model is as simple as running `./run.sh`. Running will start, and be default the model will be trained for 100 epochs. At the end of each epoch, the best-performing model will be saved to the `results` folder.
 
