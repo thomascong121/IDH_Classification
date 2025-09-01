@@ -1,0 +1,24 @@
+batch_size: 768
+epochs: 100
+eval_every_n_epochs: 1
+fine_tune_from: '/scratch/sz65/cc0395/WSI_prompt/model/FExtractor/resnet50-19c8e357.pth'
+log_every_n_steps: 25
+weight_decay: 10e-6
+fp16_precision: False
+n_gpu: 4
+gpu_ids: (0,1,2,3)
+log_dir: "/scratch/sz65/cc0395/WSI_prompt/results/SimCLR/pretrain_bs768"
+model:
+  out_dim: 256
+  base_model: "resnet50"
+  pretrained: True
+
+dataset:
+  s: 1
+  input_shape: (224,224,3)
+  num_workers: 0
+  valid_size: 0.1
+
+loss:
+  temperature: 0.5
+  use_cosine_similarity: True
