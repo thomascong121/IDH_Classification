@@ -47,5 +47,5 @@ Training the model is as simple as running `./run.sh`. Running will start, and b
 
 Testing
 ====
-For testing the model, simply use the '--testing' flag in the `run.sh` file.
+For testing the model, simply use the `--testing` flag in the `run.sh` file.
 
